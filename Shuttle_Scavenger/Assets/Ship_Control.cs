@@ -7,14 +7,14 @@ public class Ship_Control : MonoBehaviour {
     [SerializeField]
     Vector3 velocity = Vector3.zero;
     [SerializeField]
-    float accel = 5f;
+    float accel = 10f;
 
     public float max_velocity;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -51,7 +51,7 @@ public class Ship_Control : MonoBehaviour {
             velocity.y = max_velocity;
         if (velocity.y < -max_velocity)
             velocity.y = -max_velocity;
-        
+
         //updates position
         transform.position += velocity;
 	}

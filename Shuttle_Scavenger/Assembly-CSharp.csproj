@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Ship_Control.cs" />
+     <Compile Include="Assets\Smoke_Speed.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/andre/Desktop/CS583/2D Game/CS583F18_2D_Game_Levandowski_A_Shuttle_Scavenger/Shuttle_Scavenger/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
