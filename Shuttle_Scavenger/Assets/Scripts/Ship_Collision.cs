@@ -20,7 +20,7 @@ public class Ship_Collision : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Obstacle")
+        if (col.gameObject.tag == "Obstacle" && GameManager.Instance.victory == false)
         {
             Debug.Log("collision");
             smoke_death.Play();

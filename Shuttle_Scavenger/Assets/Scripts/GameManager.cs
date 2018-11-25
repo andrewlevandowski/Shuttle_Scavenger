@@ -18,7 +18,9 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public int time { get; set; }
+    public string time1 { get; set; }
+    public string time2 { get; set; }
+    public bool victory { get; set; }
     public bool destroyed { get; set; }
 
     void Awake()

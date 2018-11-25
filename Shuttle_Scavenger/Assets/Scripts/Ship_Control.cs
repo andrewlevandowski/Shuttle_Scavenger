@@ -6,7 +6,6 @@ public class Ship_Control : MonoBehaviour {
 
     Rigidbody2D rb;
 
-    public float max_velocity;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +14,7 @@ public class Ship_Control : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        if (GameManager.Instance.destroyed == false)
+        if (GameManager.Instance.destroyed == false && GameManager.Instance.victory == false)
         {
             //Forward and backgwards
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))

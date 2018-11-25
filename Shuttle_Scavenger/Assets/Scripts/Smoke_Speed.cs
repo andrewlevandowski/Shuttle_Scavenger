@@ -19,7 +19,7 @@ public class Smoke_Speed : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.destroyed == false)
+        if (GameManager.Instance.destroyed == false && GameManager.Instance.victory == false)
         {
             if (Input.GetKeyDown(key1) || Input.GetKeyDown(key2))
             {

@@ -6,7 +6,6 @@ public class Sounds : MonoBehaviour {
 
     AudioSource air_start;
     AudioSource explosion;
-    AudioSource winner;
     private int counter;
 
     // Use this for initialization
@@ -14,13 +13,12 @@ public class Sounds : MonoBehaviour {
         var Audio = GetComponents<AudioSource>();
         air_start = Audio[0];
         explosion = Audio[1];
-        winner = Audio[2];
         counter = 0;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (GameManager.Instance.destroyed == false)
+
+    // Update is called once per frame
+    void Update() {
+        if (GameManager.Instance.destroyed == false && GameManager.Instance.victory == false)
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)
                 || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.DownArrow)
@@ -30,7 +28,7 @@ public class Sounds : MonoBehaviour {
             }
         } else
         {
-            if (counter == 0)
+            if (counter == 0 && GameManager.Instance.destroyed == true)
             {
                 explosion.Play();
                 counter++;
@@ -43,8 +41,5 @@ public class Sounds : MonoBehaviour {
         {
             air_start.Stop();
         }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-            winner.Play();
     }
 }
