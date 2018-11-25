@@ -15,14 +15,18 @@ public class Smoke_Speed : MonoBehaviour {
         main.simulationSpeed = smoke_speed;
         smoke.Stop();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(key1) || Input.GetKeyDown(key2))
-        {
-            GetComponent<ParticleSystem>().Play();
-        }
 
+    // Update is called once per frame
+    void Update()
+    {
+        if (GameManager.Instance.destroyed == false)
+        {
+            if (Input.GetKeyDown(key1) || Input.GetKeyDown(key2))
+            {
+                GetComponent<ParticleSystem>().Play();
+            }
+
+        }
         if (Input.GetKeyUp(key1) || Input.GetKeyUp(key2))
         {
             GetComponent<ParticleSystem>().Stop();

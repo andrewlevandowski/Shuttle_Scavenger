@@ -54,7 +54,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera_Controller.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Ship_Collision.cs" />
      <Compile Include="Assets\Scripts\Ship_Control.cs" />
+     <Compile Include="Assets\Scripts\Smoke_Black.cs" />
      <Compile Include="Assets\Scripts\Smoke_Speed.cs" />
      <Compile Include="Assets\Scripts\Sounds.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

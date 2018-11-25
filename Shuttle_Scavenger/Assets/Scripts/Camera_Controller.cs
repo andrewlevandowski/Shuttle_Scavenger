@@ -16,7 +16,9 @@ public class Camera_Controller : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        if(Wall_1.transform.position.x - target.transform.position.x> 3)
+        if(((Wall_1.transform.position.x - target.transform.position.x) > 3) &&
+            ((Wall_2.transform.position.x - target.transform.position.x) < -13))
             transform.position = new Vector3(target.transform.position.x + offset, transform.position.y, transform.position.z);
+
 	}
 }
