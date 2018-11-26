@@ -1,0 +1,7 @@
+Additional assets provided by Kenney.nl (sprites) and Joth (music) from OpenGameArt.org. Code citations are located in the sourcecode.
+
+Code:
+Singleton - https://youtu.be/EI1KJv8owCg
+Timer - https://youtu.be/x-C95TuQtf0
+
+I created some of the sprites (background, ground, building, signs, UI, mineral capsule) and all of the non-music sounds.

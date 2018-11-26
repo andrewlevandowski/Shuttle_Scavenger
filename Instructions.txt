@@ -3,6 +3,5 @@ Optimized for 1600x900 and higher.
 
 Use the WASD or Arrow keys to navigate. The game is physics based in zero gravity. You are a ship trying to locate mineral capsules (grey pod with green circle). Collect it to advance to the next level. Avoid hitting asteroids, the ground and other obstacles. You cannot leave the asteroid surface or enter restricted areas. Your time for each level is stored in the top right.
 
-
-Additional assets provided by Kenney.nl and Joth from OpenGameArt.org. Code citations are located in the sourcecode.
+Citations are in a Citations.txt file.
 
