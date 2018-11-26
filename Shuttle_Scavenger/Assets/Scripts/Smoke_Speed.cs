@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//controls smoke's speed and whether it's on
 public class Smoke_Speed : MonoBehaviour {
 
     public KeyCode key1;
     public KeyCode key2;
 
     public float smoke_speed = 10;
-	// Use this for initialization
+
+    //changes smoke speed
 	void Start () {
         ParticleSystem smoke = GetComponent<ParticleSystem>();
         var main = smoke.main;
@@ -16,7 +17,7 @@ public class Smoke_Speed : MonoBehaviour {
         smoke.Stop();
 	}
 
-    // Update is called once per frame
+    //determines what 2 keys trigger the smoke
     void Update()
     {
         if (GameManager.Instance.destroyed == false && GameManager.Instance.victory == false)

@@ -668,7 +668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 116.92501, y: -1.5499954}
+  m_AnchoredPosition: {x: 116.92502, y: -1.5499878}
   m_SizeDelta: {x: 253.38, y: 85.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033324303
@@ -1632,7 +1632,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Creator - Andrew Levandowski
+  m_text: "Creator -\tAndrew Levandowski\nSprites -\tKenney.nl\n\tAndrew Levandowski\nSounds
+    -\tAndrew Levandowski\nMusic -\tJoth"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2a416a5a004e3dc42ab3e68b74f8c5b6, type: 2}
   m_sharedMaterial: {fileID: 21812712085270484, guid: 2a416a5a004e3dc42ab3e68b74f8c5b6,
@@ -1709,11 +1710,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1947,7 +1948,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1811264474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 803857466}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1811264474
@@ -2018,8 +2030,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 232.34, y: 32.96}
-  m_SizeDelta: {x: 217.11, y: 88.18}
+  m_AnchoredPosition: {x: 232.34, y: 32.95999}
+  m_SizeDelta: {x: 217.10999, y: 88.17999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928244298
 MonoBehaviour:

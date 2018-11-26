@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//smoke controls for when you die
 public class Smoke_Black : MonoBehaviour {
 
-	// Use this for initialization
+	//smoke is a little sped up
 	void Start () {
         ParticleSystem smoke = GetComponent<ParticleSystem>();
         var main = smoke.main;
@@ -12,7 +13,7 @@ public class Smoke_Black : MonoBehaviour {
         smoke.Stop();
     }
 	
-	// Update is called once per frame
+	//stops the smoke from rotating with the ship
 	void Update () {
         transform.rotation = Quaternion.Euler(0, 0, 0);
 	}

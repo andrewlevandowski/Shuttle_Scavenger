@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//controls soudns associated with ship
 public class Sounds : MonoBehaviour {
 
     AudioSource air_start;
     AudioSource explosion;
+    //so the explosion sound is only played once
     private int counter;
 
-    // Use this for initialization
+    //finds audio files
     void Start () {
         var Audio = GetComponents<AudioSource>();
         air_start = Audio[0];
@@ -18,6 +20,7 @@ public class Sounds : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        //plays air noise if buttons are pressed (unless dead or victorious)
         if (GameManager.Instance.destroyed == false && GameManager.Instance.victory == false)
         {
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)

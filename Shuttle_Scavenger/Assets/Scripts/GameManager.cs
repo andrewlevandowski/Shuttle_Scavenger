@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//singleton manager script
+//Singleton methods from GameDevHQ on Youtube https://youtu.be/EI1KJv8owCg
 public class GameManager : MonoBehaviour {
 
     private static GameManager _instance;
@@ -18,8 +20,10 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public string time1 { get; set; }
-    public string time2 { get; set; }
+    //time objects for recording level times
+    //victory and destroyed control the game's states
+    static public string time1 { get; set; }
+    static public string time2 { get; set; }
     public bool victory { get; set; }
     public bool destroyed { get; set; }
 
